@@ -1,6 +1,6 @@
 
 // to import files and images in our landing pages from different component and folders.
-import "../styles/landingPage.css";
+import "../styles/LandingPage.css";
 import profile from "../images/profile.jpg";
 import notificationBell from "../images/notificationBell.png";
 import community from "../images/community.png";
