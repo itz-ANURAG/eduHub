@@ -13,6 +13,7 @@
   color: white;
   justify-content: space-between;
   height: 80px;
+  width:100%;
 }
 .leftBar {
   display: flex;
@@ -23,6 +24,11 @@
   margin: 20px;
   list-style: none;
   font-size: 1.1rem;
+  cursor:pointer;
+  
+}
+.leftBar > li:hover{
+  color: rgb(228, 220, 220);
 }
 .projectName {
   font-size: 1.6rem;
@@ -41,6 +47,7 @@
   margin-top: 13px;
   background-color: rgb(57, 57, 57);
   border-color: rgb(57, 57, 57);
+  cursor:pointer;
 }
 .profile > img {
   width: 40px;
@@ -123,7 +130,7 @@
 /* styling the third section which is about the goals. */
 .thirdSection {
   width: 100%;
-  height: 700px;
+  min-height: 700px;
   display: flex;
   background-color: white;
   padding: 1px;
@@ -165,7 +172,7 @@
 hr {
   background-color: black;
   border: 1px solid black;
-  width: 80%;
+  width: 95%;
 }
 
 /* styling the fourth section to contact the admins of the website by the users. */
@@ -222,6 +229,7 @@ form > button {
   color: white;
   border-radius: 5px;
   margin: 10px 10px 10px 0px;
+  cursor:pointer;
 }
 
 /* styling the footer section. */

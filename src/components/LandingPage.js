@@ -1,9 +1,13 @@
-
 // to import files and images in our landing pages from different component and folders.
 import "../styles/LandingPage.css";
 import profile from "../images/profile.jpg";
 import notificationBell from "../images/notificationBell.png";
 import community from "../images/community.png";
+import education_icon from "../images/education_icon.png";
+import Finance_icon from "../images/Finance_icon.png";
+import govScheme_icon from "../images/govScheme_icon.png";
+import opportunity_icon from "../images/opportunity_icon.png";
+import resource_icon from "../images/resource_icon.png";
 import goals from "../images/goals.png";
 // library imported to create the effect of autowrite
 import { useTypewriter, Cursor } from "react-simple-typewriter";
@@ -15,7 +19,8 @@ export default function LandingPage() {
   });
   return (
     <>
-          {/*creating header section which contains our navbar  */}
+      {/*creating header section which contains our navbar  */}
+
       <header className="header">
         <div className="projectName">EduHub</div>
         <nav>
@@ -34,7 +39,9 @@ export default function LandingPage() {
           </ul>
         </nav>
       </header>
+
       {/* jsx code for the first section which serves the purpose of our website intro.  */}
+
       <section className="firstSection">
         <div className="typewrite">
           We at EduHub help you to get yourself familiar with various stuffs
@@ -46,7 +53,9 @@ export default function LandingPage() {
           </span>
         </div>
       </section>
+
       {/* second section jsx which shows whatwe usually help u with in our website. */}
+
       <section className="secondSection">
         <h1
           className="
@@ -54,7 +63,9 @@ export default function LandingPage() {
         >
           <span>What we do</span>
         </h1>
+
         {/* insterted grid layout to make desired layout. */}
+
         <div className="aboutGrid">
           <div className="template">
             <img className="community" src={community} alt="community logo" />
@@ -65,7 +76,7 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="template">
-            <img className="community" src={community} alt="community logo" />
+            <img className="community" src={education_icon} alt="community logo" />
             <h2>Educate</h2>
             <div>
               Loremschhed sbhbjdw dwhhwd hwdvhwh dvwhvhdw wdvhv dwvvh dgvvvd mtm
@@ -73,7 +84,7 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="template">
-            <img className="community" src={community} alt="community logo" />
+            <img className="community" src={opportunity_icon} alt="community logo" />
             <h2>Research Oportunity </h2>
             <div>
               Loremschhed sbhbjdw dwhhwd hwdvhwh dvwhvhdw wdvhv dwvvh dgvvvd mtm
@@ -81,7 +92,7 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="template">
-            <img className="community" src={community} alt="community logo" />
+            <img className="community" src={Finance_icon} alt="community logo" />
             <h2>Financial Awareness</h2>
             <div>
               Loremschhed sbhbjdw dwhhwd hwdvhwh dvwhvhdw wdvhv dwvvh dgvvvd
@@ -89,7 +100,7 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="template">
-            <img className="community" src={community} alt="community logo" />
+            <img className="community" src={govScheme_icon} alt="community logo" />
             <h2>Gov Schemes Info</h2>
             <div>
               Loremschhed sbhbjdw dwhhwd hwdvhwh dvwhvhdw wdvhv dwvvh dgvvvd mtm
@@ -97,7 +108,7 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="template">
-            <img className="community" src={community} alt="community logo" />
+            <img className="community" src={resource_icon} alt="community logo" />
             <h2>Resource Acess</h2>
             <div>
               Loremschhed sbhbjdw dwhhwd hwdvhwh dvwhvhdw wdvhv dwvvh dgvvvd mtm
@@ -106,10 +117,15 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+
       {/* just a filler section to make website more appelaing and giving required spaces. */}
+
       <div className="filler">
         <hr />
       </div>
+
+      {/* third section start here */}
+
       <section className="thirdSection">
         <div className="left3">
           <img src={goals} alt="goals logo" className="goals" />

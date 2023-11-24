@@ -3,6 +3,7 @@
 import React from "react";
 import "../styles/SignupLogin.css";
 import {useState} from "react";
+import google from "../images/google.png";
 
 function SignupLogin() {
   // using useState hook for creating desired logIn signUp effect.
@@ -42,6 +43,13 @@ function SignupLogin() {
         <h3 className="pseudoClass">
         <span className="or">or</span>
         </h3>
+        {action==="Sign Up"?<div className="google-cont">
+           <a href="#" className="google-auth-button">
+            <img src={google} alt="Google Logo" className="google-logo"/>
+             Sign up with Google
+             </a>
+             </div>:<></>}
+
         <div className="haveAccount">{action==="Sign Up"?"Already":"don\'t"} have an account?<span onClick={handleClick}>{" "}{ action==="Sign Up"?"Log In":"Sign Up"}</span></div>
       </div>
       </div>
